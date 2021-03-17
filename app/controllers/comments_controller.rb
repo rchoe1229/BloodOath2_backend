@@ -1,12 +1,14 @@
 class CommentsController < ApplicationController
 
     def create
-        @comment = Comment.create(params)
-        render json: { "comment: #{@comment}"}
+        @comment = Comment.create(cult_id: params[:cult_id], comment: params[:comment])
+        render json: { comment: "#{@comment.comment}"}
     end
     
     def destroy
         @comment = Comment.find(params[:id])
-        render json: { "comment ##{@comment.id} deleted"}
+        @comment.destroy
+        render json: { comment: "#{@comment.id} deleted"}
     end
+
 end

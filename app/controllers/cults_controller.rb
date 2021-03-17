@@ -6,9 +6,10 @@ class CultsController < ApplicationController
     end
 
     def update
-        @cult.update(params)
+        @cult = Cult.find(params[:id])
+        @cult.update(count: params[:count])
         render json: @cult, include: :comments
     end
 
-    
+
 end
