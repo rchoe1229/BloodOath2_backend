@@ -1,24 +1,18 @@
-# README
+# BLOODOATH
+WELCOME TO FLATIRON SCHOOL NEW FRIENDS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This exercise was created to test your knowledge and get more familiar with JavaScript concepts!
 
-Things you may want to cover:
+*   Fetch
+*   Fetch w/ options
+*   DOM manipulations
 
-* Ruby version
+# TODO LIST
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*  Fork and clone this repo (you can name the cloned repo in your terminal by typing a space after the copied repo!)
+  * Also fork and clone the frontend for this repo that we will be working with! (Instructions for backend will be in that repo)
+*  In your terminal, run:
+    rails db:migrate
+    rails db:seed
+    rails s
+*   DO NOT CHANGE ANY OF THE CODE IN THIS REPO- ALL OF YOUR CODE WILL GO IN INDEX.JS of the Frontend Repo
